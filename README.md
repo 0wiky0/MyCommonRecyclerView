@@ -12,11 +12,11 @@
 MyCommonRecyclerView recyclerView = (MyCommonRecyclerView) findViewById(R.id.recyclerView);
 myCommonRecyclerView.setOnReachBottomListener(new OnReachBottomListener(){
       public void onReachBottom(){ 
-    		// 即将到达底部，加载更多数据};
-      })
+    		// 即将到达底部，加载更多数据
+            }
+      });
 myCommonRecyclerView.setReachBottomRow(2);//设置滚动到倒数第二行时进行回调，默认为倒数第一行
 ```
-
 2. 设置EmptyView，当列表为空时，显示EnptyView
 布局：
 ```xml

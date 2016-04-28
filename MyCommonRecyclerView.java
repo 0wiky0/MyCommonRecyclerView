@@ -14,8 +14,8 @@ import android.view.View;
  * <p/>
  * 1. 支持添加滚动到底部监听回调
  * myCommonRecyclerView.setOnReachBottomListener(new OnReachBottomListener(){
- * public void onReachBottom(){ // 即将到达底部，加载更多数据};
- * })
+ * public void onReachBottom(){ // 即将到达底部，加载更多数据}
+ *});
  * <p/>
  * 2. 设置EnptyView，当列表为空时，显示EnptyView
  * 布局：

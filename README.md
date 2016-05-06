@@ -18,7 +18,8 @@ myCommonRecyclerView.setOnReachBottomListener(new OnReachBottomListener(){
 myCommonRecyclerView.setReachBottomRow(2);//设置滚动到倒数第二行时进行回调，默认为倒数第一行
 ```
 2. 设置EmptyView，当列表为空时，显示EnptyView
-布局：
+
+- 布局：
 ```xml
   <com.wiky.integralwalluidemo.widght.MyCommonRecyclerView
 	 android:id="@+id/recyclerView"
@@ -30,7 +31,26 @@ myCommonRecyclerView.setReachBottomRow(2);//设置滚动到倒数第二行时进
  	 android:layout_width="match_parent"
   	android:layout_height="wrap_content"/>
   ```
-  使用：
+  
+- 与SwipeRefreshLayout结合使用时，布局可采用：
+  ```xml
+  <SwipeRefreshLayout
+  ...>
+  <FrameLayout
+  ...>
+  <com.wiky.integralwalluidemo.widght.MyCommonRecyclerView
+	 android:id="@+id/recyclerView"
+  	android:layout_width="match_parent"
+ 	android:layout_height="wrap_content"/>
+    
+  <TextView
+ 	 android:id="@+id/emptyView"
+ 	 android:layout_width="match_parent"
+  	android:layout_height="wrap_content"/>
+  </FrameLayout>
+  </SwipeRefreshLayout>
+  ```  
+- 使用：
  ```java
  myCommonRecyclerView.setEmptyView(findViewById(R.id.emptyView));
  ```
